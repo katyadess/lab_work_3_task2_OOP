@@ -116,6 +116,7 @@
             cmdStart.TabIndex = 7;
             cmdStart.Text = "Вычислить";
             cmdStart.UseVisualStyleBackColor = true;
+            cmdStart.Click += cmdStart_Click;
             // 
             // cmdExit
             // 
