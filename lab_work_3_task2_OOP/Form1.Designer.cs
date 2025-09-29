@@ -44,7 +44,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(272, 234);
+            label1.Location = new Point(24, 31);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
             label1.Size = new Size(178, 28);
@@ -54,7 +54,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(272, 294);
+            label2.Location = new Point(24, 145);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
             label2.Size = new Size(213, 28);
@@ -64,7 +64,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(272, 356);
+            label3.Location = new Point(24, 265);
             label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
             label3.Size = new Size(103, 28);
@@ -73,44 +73,44 @@
             // 
             // txtn
             // 
-            txtn.Location = new Point(505, 228);
-            txtn.Margin = new Padding(4, 4, 4, 4);
+            txtn.Location = new Point(24, 63);
+            txtn.Margin = new Padding(4);
             txtn.Name = "txtn";
-            txtn.Size = new Size(184, 34);
+            txtn.Size = new Size(263, 34);
             txtn.TabIndex = 3;
             // 
             // txtm
             // 
-            txtm.Location = new Point(505, 288);
-            txtm.Margin = new Padding(4, 4, 4, 4);
+            txtm.Location = new Point(24, 177);
+            txtm.Margin = new Padding(4);
             txtm.Name = "txtm";
-            txtm.Size = new Size(184, 34);
+            txtm.Size = new Size(263, 34);
             txtm.TabIndex = 4;
             // 
             // txtRez
             // 
-            txtRez.Location = new Point(505, 350);
-            txtRez.Margin = new Padding(4, 4, 4, 4);
+            txtRez.Location = new Point(24, 306);
+            txtRez.Margin = new Padding(4);
             txtRez.Multiline = true;
             txtRez.Name = "txtRez";
-            txtRez.Size = new Size(184, 27);
+            txtRez.Size = new Size(375, 311);
             txtRez.TabIndex = 5;
             // 
             // dgvMass
             // 
             dgvMass.AllowUserToOrderColumns = true;
             dgvMass.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvMass.Location = new Point(296, 67);
-            dgvMass.Margin = new Padding(4, 4, 4, 4);
+            dgvMass.Location = new Point(460, 44);
+            dgvMass.Margin = new Padding(4);
             dgvMass.Name = "dgvMass";
             dgvMass.RowHeadersWidth = 51;
-            dgvMass.Size = new Size(338, 95);
+            dgvMass.Size = new Size(600, 365);
             dgvMass.TabIndex = 6;
             // 
             // cmdStart
             // 
-            cmdStart.Location = new Point(272, 436);
-            cmdStart.Margin = new Padding(4, 4, 4, 4);
+            cmdStart.Location = new Point(431, 482);
+            cmdStart.Margin = new Padding(4);
             cmdStart.Name = "cmdStart";
             cmdStart.Size = new Size(195, 50);
             cmdStart.TabIndex = 7;
@@ -119,23 +119,25 @@
             // 
             // cmdExit
             // 
-            cmdExit.Location = new Point(272, 515);
-            cmdExit.Margin = new Padding(4, 4, 4, 4);
+            cmdExit.Location = new Point(892, 482);
+            cmdExit.Margin = new Padding(4);
             cmdExit.Name = "cmdExit";
             cmdExit.Size = new Size(195, 50);
             cmdExit.TabIndex = 8;
             cmdExit.Text = "Завершити роботу";
             cmdExit.UseVisualStyleBackColor = true;
+            cmdExit.Click += cmdExit_Click;
             // 
             // cmdClear
             // 
-            cmdClear.Location = new Point(494, 480);
-            cmdClear.Margin = new Padding(4, 4, 4, 4);
+            cmdClear.Location = new Point(661, 482);
+            cmdClear.Margin = new Padding(4);
             cmdClear.Name = "cmdClear";
             cmdClear.Size = new Size(195, 50);
             cmdClear.TabIndex = 9;
             cmdClear.Text = "Очистка полів";
             cmdClear.UseVisualStyleBackColor = true;
+            cmdClear.Click += cmdClear_Click;
             // 
             // frmMass
             // 
@@ -153,7 +155,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "frmMass";
             Text = "Двумерные массивы";
             ((System.ComponentModel.ISupportInitialize)dgvMass).EndInit();
