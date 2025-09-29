@@ -70,7 +70,7 @@
 
 
             sr = summ / nn;
-            txtRez.Text = "Середнє арифметичне додатних елементів масиву" + 
+            txtRez.Text = "Середнє арифметичне додатних елементів масиву = " + 
             Math.Round(sr, 5).ToString() + Environment.NewLine + 
             "Кількість додатних елементів масиву = " + nn.ToString();
 
