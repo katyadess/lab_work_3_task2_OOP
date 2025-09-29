@@ -1,6 +1,6 @@
 ﻿namespace lab_work_3_task2_OOP
 {
-    partial class Form1
+    partial class frmMass
     {
         /// <summary>
         ///  Required designer variable.
@@ -31,119 +31,132 @@
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            dataGridView1 = new DataGridView();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            txtn = new TextBox();
+            txtm = new TextBox();
+            txtRez = new TextBox();
+            dgvMass = new DataGridView();
+            cmdStart = new Button();
+            cmdExit = new Button();
+            cmdClear = new Button();
+            ((System.ComponentModel.ISupportInitialize)dgvMass).BeginInit();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(383, 170);
+            label1.Location = new Point(272, 234);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(50, 20);
+            label1.Size = new Size(178, 28);
             label1.TabIndex = 0;
-            label1.Text = "label1";
+            label1.Text = "Кількість строк n=";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(375, 215);
+            label2.Location = new Point(272, 294);
+            label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(50, 20);
+            label2.Size = new Size(213, 28);
             label2.TabIndex = 1;
-            label2.Text = "label2";
+            label2.Text = "Кількість стовпців m=";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(383, 254);
+            label3.Location = new Point(272, 356);
+            label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
-            label3.Size = new Size(50, 20);
+            label3.Size = new Size(103, 28);
             label3.TabIndex = 2;
-            label3.Text = "label3";
+            label3.Text = "Результат:";
             // 
-            // textBox1
+            // txtn
             // 
-            textBox1.Location = new Point(456, 163);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(135, 27);
-            textBox1.TabIndex = 3;
+            txtn.Location = new Point(505, 228);
+            txtn.Margin = new Padding(4, 4, 4, 4);
+            txtn.Name = "txtn";
+            txtn.Size = new Size(184, 34);
+            txtn.TabIndex = 3;
             // 
-            // textBox2
+            // txtm
             // 
-            textBox2.Location = new Point(465, 208);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(135, 27);
-            textBox2.TabIndex = 4;
+            txtm.Location = new Point(505, 288);
+            txtm.Margin = new Padding(4, 4, 4, 4);
+            txtm.Name = "txtm";
+            txtm.Size = new Size(184, 34);
+            txtm.TabIndex = 4;
             // 
-            // textBox3
+            // txtRez
             // 
-            textBox3.Location = new Point(465, 254);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(135, 27);
-            textBox3.TabIndex = 5;
+            txtRez.Location = new Point(505, 350);
+            txtRez.Margin = new Padding(4, 4, 4, 4);
+            txtRez.Multiline = true;
+            txtRez.Name = "txtRez";
+            txtRez.Size = new Size(184, 27);
+            txtRez.TabIndex = 5;
             // 
-            // dataGridView1
+            // dgvMass
             // 
-            dataGridView1.AllowUserToOrderColumns = true;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(367, 57);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(246, 68);
-            dataGridView1.TabIndex = 6;
+            dgvMass.AllowUserToOrderColumns = true;
+            dgvMass.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvMass.Location = new Point(296, 67);
+            dgvMass.Margin = new Padding(4, 4, 4, 4);
+            dgvMass.Name = "dgvMass";
+            dgvMass.RowHeadersWidth = 51;
+            dgvMass.Size = new Size(338, 95);
+            dgvMass.TabIndex = 6;
             // 
-            // button1
+            // cmdStart
             // 
-            button1.Location = new Point(54, 380);
-            button1.Name = "button1";
-            button1.Size = new Size(142, 36);
-            button1.TabIndex = 7;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            cmdStart.Location = new Point(272, 436);
+            cmdStart.Margin = new Padding(4, 4, 4, 4);
+            cmdStart.Name = "cmdStart";
+            cmdStart.Size = new Size(195, 50);
+            cmdStart.TabIndex = 7;
+            cmdStart.Text = "Вычислить";
+            cmdStart.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // cmdExit
             // 
-            button2.Location = new Point(324, 380);
-            button2.Name = "button2";
-            button2.Size = new Size(142, 36);
-            button2.TabIndex = 8;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
+            cmdExit.Location = new Point(272, 515);
+            cmdExit.Margin = new Padding(4, 4, 4, 4);
+            cmdExit.Name = "cmdExit";
+            cmdExit.Size = new Size(195, 50);
+            cmdExit.TabIndex = 8;
+            cmdExit.Text = "Завершити роботу";
+            cmdExit.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // cmdClear
             // 
-            button3.Location = new Point(571, 380);
-            button3.Name = "button3";
-            button3.Size = new Size(142, 36);
-            button3.TabIndex = 9;
-            button3.Text = "button3";
-            button3.UseVisualStyleBackColor = true;
+            cmdClear.Location = new Point(494, 480);
+            cmdClear.Margin = new Padding(4, 4, 4, 4);
+            cmdClear.Name = "cmdClear";
+            cmdClear.Size = new Size(195, 50);
+            cmdClear.TabIndex = 9;
+            cmdClear.Text = "Очистка полів";
+            cmdClear.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // frmMass
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(11F, 28F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(dataGridView1);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            ClientSize = new Size(1100, 630);
+            Controls.Add(cmdClear);
+            Controls.Add(cmdExit);
+            Controls.Add(cmdStart);
+            Controls.Add(dgvMass);
+            Controls.Add(txtRez);
+            Controls.Add(txtm);
+            Controls.Add(txtn);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Name = "Form1";
-            Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            Margin = new Padding(4, 4, 4, 4);
+            Name = "frmMass";
+            Text = "Двумерные массивы";
+            ((System.ComponentModel.ISupportInitialize)dgvMass).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -153,12 +166,12 @@
         private Label label1;
         private Label label2;
         private Label label3;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private DataGridView dataGridView1;
-        private Button button1;
-        private Button button2;
-        private Button button3;
+        private TextBox txtn;
+        private TextBox txtm;
+        private TextBox txtRez;
+        private DataGridView dgvMass;
+        private Button cmdStart;
+        private Button cmdExit;
+        private Button cmdClear;
     }
 }

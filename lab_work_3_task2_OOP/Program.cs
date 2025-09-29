@@ -1,4 +1,4 @@
-namespace lab_work_3_task2_OOP
+﻿namespace lab_work_3_task2_OOP
 {
     internal static class Program
     {
@@ -11,7 +11,7 @@ namespace lab_work_3_task2_OOP
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+            Application.Run(new frmMass());
         }
     }
 }
